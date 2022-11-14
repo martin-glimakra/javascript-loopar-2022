@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(1);
+        console.log(2);
+        console.log(3);
+        console.log(4);
+        console.log(5);
+
+
+        // skriver också ut 1 - 5 men på ett bättre sätt
+        let number = 1;
+        while (number <= 5) {
+            console.log(number, 'while loopen');
+            // ++ betyder pluss 1. Det går också att skriva number = number + 1 för samma resultat
+            number++;
+        }
+
+        // while (true) {
+        //     console.log('oänlig loop')
+        // }
+
+        while (false) {
+            console.log('Den här console.log() kommer aldrig att köras');
+        }
+
+
+        // For är min favorit loop:
+
+        // tre saker händer på första raden:
+        // let i = 1; En variabel som heter i får värdet 1
+        // i <= 5 Här bestäms villoret som bestämmer om loopen ska köras en gång till
+        // i++ Efter varje gång loopen körs händer detta: värdet på i blir i + 1. Om för tillfället är 4 blir det 5
+
+        for (let i = 1; i <= 5; i++) {
+            console.log(i, 'for loopen');
+        }
+
+        //Överkurs:
+        // Hur många i kören är över 13 år
+        let arrayMedKörmedlemmarsÅlder = [60,12,13,14,50,11];
+
+        //logga ut plats 1 i arrayMedKörmedlemmarsÅlder
+        console.log('logga ut plats 0 i arrayMedKörmedlemmarsÅlder:', arrayMedKörmedlemmarsÅlder[0]);
+
+        //Loopen kollar igenom hela arrayMedKörmedlemmarsÅlder. Om nummret är större än 13 körs rad 57. Om inte körs rad 60.
+
+        for (let i = 1; i < arrayMedKörmedlemmarsÅlder.length; i++) {
+            if(arrayMedKörmedlemmarsÅlder[i] > 13) {
+                console.log(arrayMedKörmedlemmarsÅlder[i]);
+            }
+            else {
+                console.log(`Nummret ${arrayMedKörmedlemmarsÅlder[i]} är inte större än 13`);
+            }
+        }
+    </script>
+</body>
+</html>
